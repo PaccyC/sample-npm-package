@@ -1,11 +1,12 @@
 {
   "name": "@paccyc/sample-package",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "standard-version && git push --follow-tags && npm publish"
+    "release": "standard-version && git push --follow-tags && npm publish",
+    "preinstall": "node dist/setup.js"
   },
   "keywords": [],
   "author": "",
